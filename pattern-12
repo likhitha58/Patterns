@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+void pattern12(int n){
+    int st=1;
+    for(int i=1;i<=n;i++){
+        if(i%2!=0){
+            st=1;
+        }else{
+            st=0;
+        }
+        for(int j=1;j<=i;j++){
+            cout<<st;
+            st=1-st;
+        }
+        cout<<endl;
+    }
+}
+int main(){
+    int n;
+    cin>>n;
+    pattern12(n);
+}
